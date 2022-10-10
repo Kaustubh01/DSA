@@ -10,14 +10,14 @@ Node* start = NULL;
 void insert_end(int key){
 	Node* node = (Node*)malloc(sizeof(Node));
 	Node* t;
-
+	t = start;
+	node->next = NULL;
 	node->data = key;
 	if(start == NULL){
 		start = node;
 	}
 
 	else{
-			t = start;
 			while(t->next != NULL){
 				t=t->next;
 			}
